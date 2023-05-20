@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="personalização.css">
+</head>
+<body>
+                    <!--Menu-->
+    <header>
+        <div class="contanier">
+            <div class="menu">
+                <nav>
+                    <a href="inicio.html">Home</a>
+                    <a href="sobre.html">Sobre</a>
+                    <a href="cadastro.html">Cadastro</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!--Conteúdo-->
+    <div class="tudo-cadastro">
+        <div class="box3">
+            <div class="img-box">
+                <img src="imagens/icone-cadastro.png">
+            </div>
+            <div class="form-box">
+        
+                <h1>CADASTRO</h1>
+                <p>Complete suas Informações</p>
+                <form action="#">
+                    <div class="grupo-input">
+                        <label for="nome">Nome Completo</label>
+                        <input type="text" name="nome" placeholder="Digite seu nome completo" required>
+                    </div>
+        
+                    <div class="grupo-input">
+                        <label for="email">E-mail</label>
+                        <input type="text" name="email" placeholder="Digite seu e-mail" required>
+                    </div>
+        
+                    <div class="grupo-input">
+                        <label for="celular">Celular</label>
+                        <input type="tel" name="celular" placeholder="(xx)xxxxx-xxxx" required>
+                    </div>
+
+                    <label class="grupo-input">Sexo</label>
+                    <select id="sexo">
+                        <option>Selecione</option>
+                        <option>Masculino</option>
+                        <option>Feminino</option>
+                        <option>Prefiro não informar</option>
+                    </select>
+        
+                    <div class="grupo-input">
+                        <button type="submit" onclick="window.location.href='cadastro2.html'">Próximo</button>
+                    </div>
+                    
+                </form>
+            </div>
+        
+        </div>
+    </div>
+</body>
+</html>

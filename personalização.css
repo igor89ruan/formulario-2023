@@ -1,0 +1,304 @@
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+ *{
+   margin: 0;
+   padding: 0; 
+   box-sizing: border-box;               /*Aqui é para colocar fonte nas letras e zera o começo (base)*/
+   font-family: 'Poppins', sans-serif;
+ }
+ body{
+   background-image: url(imagens/background.jpg);
+   background-position: center;
+   background-repeat: no-repeat;         /*Aqui imagem de fundo e parametros centralizar*/
+   background-size: cover;
+ }
+
+ /*Personalização do (header|menu)*/
+ .contanier{
+   max-width: 1080px;
+   margin: 0 auto;
+   display: flex;                        /*Aqui centraliza todos os dados*/
+   align-items: center;
+   justify-content: center;
+   min-height: 5vh;
+   font-size: 20px;
+}
+header{
+   background-color: rgba(255, 255, 255, 0.4);
+   backdrop-filter: blur(40px);          /*Aqui deixa o menu com fundo transparente*/
+   width: auto;
+}
+.menu nav a{
+   color: black;
+   text-decoration: none;
+   padding-right: 30px;
+   position: relative;
+}
+
+.menu nav a::after{
+   content: ' ';
+   width: 0px;
+   height: 4px;
+   background-image: linear-gradient(45deg, violet, #ff008a);
+   position: absolute;
+   top: 25px;
+   left: 0;
+   transition: width 0.5s;
+}
+.menu nav a:hover::after{
+   width: 50px;
+}
+/*Vai até aqui*/
+
+/*Personalização da página de Home(Início)*/
+.tudo-inicio{
+   display: flex;                     /* aqui é para alinhar a img de fundo e os todos os dados*/
+   align-items: center;
+   justify-content: center;
+   padding: 20px;
+   min-height: 100vh;
+}
+.box1{
+   text-align: center;
+}
+.img-inicio1{
+   width: auto;
+   padding: 0;
+}
+.texto{
+   background-color: rgba(255, 255, 255, 0.5);
+   width: 50%;
+   margin-left: 25%;
+   padding: 30px 20px;
+   border-radius: 20px 20px 20px 20px;
+}
+
+.img-inicio2{
+   width: auto;
+   padding: 0px;
+
+}
+.img-inicio1 img{
+   width: 900px;
+}
+.img-inicio2 img{
+   width: 700px;
+}
+/*Vai até aqui*/
+
+/*Personalização da página de Sobre*/
+.tudo-sobre{
+   display: flex;                     /* aqui é para alinhar a img de fundo e os todos os dados*/
+   align-items: center;
+   justify-content: center;
+   padding: 20px;
+   min-height: 100vh;
+}
+.box2{
+   text-align: center;
+   }
+.sobre-img1{
+   width: auto;
+   padding: 0px;
+}
+.sobre-img2{
+   width: auto;
+   padding: 0px;
+   }
+.sobre-img1 img, .sobre-img2 img{
+   width: 500px;
+}
+.sobre-texto{
+   background-color: rgba(255, 255, 255, 0.5);
+   width: 50%;
+   margin-left: 25%;
+   padding: 30px 20px;
+   border-radius: 20px 20px 20px 20px;
+}
+.sobre-texto p{
+   color: #3d3d3d;
+}
+/*Vai até aqui*/
+
+/*Personalização da página de cadastro*/
+ .tudo-cadastro{
+    display: flex;                     /* aqui é para alinhar a img de fundo e os todos os dados*/
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    min-height: 100vh;
+ }
+
+ .box3{
+    display: flex;
+    width: 930px;
+ }
+
+ .img-box{
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 50%;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border-radius: 20px 0 0 20px;
+ }
+ 
+ .img-box img{
+    width: 100%;
+ }
+
+ .form-box{
+    background-color: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(40px);
+    padding: 30px 20px;
+    width: 50%;
+    border-radius: 0 20px 20px 0;
+ }
+
+ .form-box, h1{
+    font-size: 32px;
+    color: black;
+ }
+
+ .form-box, p{
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+ }
+
+ .form-box form{
+    margin: 20px 0;
+ }
+ 
+ .form, .grupo-input{
+    margin-bottom: 15px;
+ }
+
+ .form,.grupo-input,label{
+    color: black;
+    font-weight: block;
+    margin-bottom: 5px;
+ }
+
+ .form, .grupo-input input{
+    width: 100%;
+    height: 47px;
+    background-color: rgba(255, 255, 255, 0.32);
+    border-radius: 20px;
+    outline: none;
+    border: 2px solid transparent;
+    padding: 15px;
+    font-size: 15px;
+    color: #616161;
+    transition: all 0.4s ease;
+ }
+
+ .form,.grupo-input button{
+    width: 100%;
+    height: 47px;
+    background: #ff008a;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    margin-top: 15px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+ }
+ #sexo{
+   margin-top: 20px;
+   margin-bottom: 5px;
+   background-color: rgba(255, 255, 255, 0.32);
+ }
+
+ @media (max-width: 930px) {
+    .img-box{
+        display: none;
+    }
+    .box{
+        width: 700px;
+    }
+    .form-box{
+        width: 100%;
+        border-radius: 20px;
+    }
+ }
+
+ @media (max-width:500px) {
+    .senha{
+        width: 100%;
+        padding: 0;
+    }
+ }
+/*Vai até aqui*/
+
+ /*Personalização da segunda página do cadastro*/
+
+
+ #botao{
+   width: 100%;
+   height: 47px;
+   background: #ff008a;
+   border-radius: 20px;
+   outline: none;
+   border: none;
+   margin-top: 15px;
+   color: white;
+   cursor: pointer;
+   font-size: 16px;
+ }
+ .form-box2{
+   background-color: rgba(255, 255, 255, 0.4);
+   backdrop-filter: blur(40px);
+   padding: 30px 20px;
+   width: 50%;
+   border-radius: 0 20px 20px 0;
+ }
+ .form-box2, h1{
+   font-size: 32px;
+    color: black;
+ }
+ .form-box2, p{
+   font-size: 16px;
+   color: black;
+ }
+ #radio{
+   font-size: 18px;
+ }
+ .radio{
+   margin-top: 50px;
+   margin-bottom: 50px;
+ }
+ #elemento-radio{
+
+   margin-left: 30px;
+ }
+ .senior{
+   margin-bottom: 50px;
+   font-size: 20px;
+ }
+ #elemento-senior{
+   background-color: rgba(255, 255, 255, 0.4);
+ }
+ .tec{
+   margin-bottom: 50px;
+   font-size: 18px;
+ }
+ .checkbox{
+   text-align: center;
+   margin-top: 50px;
+   margin-bottom: 50px;
+ }
+#tecnologia{
+   margin-top: 3pxpx;
+   margin-left: 25px;
+}
+
+.campo{
+   margin-left: 5px;
+   text-align: center;
+   font-size: 20px;
+}
+#experiencia{
+   background-color: rgba(255, 255, 255, 0.4);
+}

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="personalização.css">
+</head>
+<body>
+                    <!--Menu-->
+    <header>
+        <div class="contanier">
+            <div class="menu">
+                <nav>
+                    <a href="inicio.html">Home</a>
+                    <a href="sobre.html">Sobre</a>
+                    <a href="cadastro.html">Cadastro</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!--Conteúdo-->
+    <div class="tudo-cadastro">
+        <div class="box3">
+            <div class="img-box">
+                <img src="imagens/icone-cadastro.png">
+            </div>
+            <div class="form-box2">
+        
+                <h1>CADASTRO</h1>
+                <p>Complete suas Informações</p>
+                    <!--Bloco de Seleção através de pequenas "bolinhas"
+                    Com checked = confirmação de seleção-->
+                <div class="radio">
+
+                    <label id="radio">De qual lado da aplicação você desenvolve:</label>
+                    <label id="elemento-radio">
+                        <input type="radio" name="devweb" value="frontend">Front-end
+                    </label>
+                    <label id="elemento-radio">
+                        <input type="radio" name="devweb" value="backend">Back-end
+                    </label>
+                    <label id="elemento-radio">
+                        <input type="radio" name="devweb" value="fullstack">Fullstack
+                    </label>
+                
+                </div>
+                    <!--Bloco de seleção com varias informações
+                                    sendo uma opção selecione!-->
+                <div class="senior">
+
+                    <label for="senioridade" id="senior">Senioridade</label>
+                    <select id="elemento-senior">
+                        <option selected disabled value="">Selecione</option>
+                        <option>Estudante</option>
+                        <option>Junior</option>
+                        <option>Pleno</option>
+                        <option>Senior</option>  
+                    </select>
+                        
+                    </div>
+                                <!--Bloco de seleção através pequenos quadradinhos podendo selecionar varios --> 
+                    <div id="check" class="checkbox">
+
+                        <label class="tec">Selecione as tecnologias que utiliza:</label>
+                        <br>
+                        <input type="checkbox" id="tecnologia" name="tecnologia" value="HTML">
+                        <label for="tecnologia">HTML</label>
+                        <input type="checkbox" id="tecnologia" name="tecnologia" value="CSS">
+                        <label for="tecnologia">CSS</label>
+                        <input type="checkbox" id="tecnologia" name="tecnologia" value="JS">
+                        <label for="tecnologia">JS</label>
+                        <input type="checkbox" id="tecnologia" name="tecnologia" value="PHP">
+                        <label for="tecnologia">PHP</label>
+                        <input type="checkbox" id="tecnologia" name="tecnologia" value="Python">
+                        <label for="tecnologia">Python</label>
+                        <input type="checkbox" id="tecnologia" name="tecnologia" value="C#">
+                        <label for="tecnologia">C#</label>
+                        <input type="checkbox" id="tecnologia" name="tecnologia" value="Java">
+                        <label for="tecnologia">Java</label>
+                        <input type="checkbox" id="tecnologia" name="tecnologia" value="C++">
+                        <label for="tecnologia">C++</label>
+                        <input type="checkbox" id="tecnologia" name="tecnologia" value="C">
+                        <label for="tecnologia">C</label>
+
+                    </div>
+
+                    <div class="campo">
+
+                        <label>Conte um pouco da sua experiência</label>
+                        <textarea name="experiencia" id="experiencia" cols="30" rows="10" style="width: 26em;"></textarea>
+                    </div>
+
+                    <button type="reset" class="grupo-input" id="botao" onclick="alert('Cadastro Realizado com Sucesso!!!')">Finalizar</button>
+                                
+            </div>
+        
+        </div>
+    </div>
+</body>
+</html>
